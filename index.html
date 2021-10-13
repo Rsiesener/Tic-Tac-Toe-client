@@ -30,7 +30,7 @@
             <input type="email" name="credentials[email]" placeholder="Email" required>
             <input type="password" name="credentials[password]"
             placeholder="Password" required>
-            <input type="password" name="credentials[passwordConfirmation]" placeholder="Password Confirmation" required>
+            <input type="password" name="credentials[password_confirmation]" placeholder="Password Confirmation" required>
             <button class="signUpBtn" id="signUpBtn">Sign Up</button>
           </fieldset>
         </form>
@@ -57,7 +57,13 @@
       </section>
 
       <section>
+        <button id="playBtn" class="playBtn">Play</button>
         <button id="signOut" class="signOut">Sign Out</button>
+      </section>
+
+      <section>
+        <div id="error-message"></div>
+        <div id="movies-display"></div>
       </section>
 
       <div class="counter" id="counter">
