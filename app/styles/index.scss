@@ -83,6 +83,7 @@ body {
   width: 25vw;
   justify-content: center;
   align-items: center;
+  color: red;
 }
 #container {
   display: none;
@@ -104,26 +105,46 @@ body {
 }
 
 #box-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
   border: 2px solid orangered;
   height: 15vh;
   width: 15vh;
 }
 #box-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
   border: 2px solid orangered;
   height: 15vh;
   width: 15vh;
 }
 #box-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
   border: 2px solid orangered;
   height: 15vh;
   width: 15vh;
 }
 #box-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
   border: 2px solid orangered;
   height: 15vh;
   width: 15vh;
 }
 #box-5 {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
   border: 2px solid orangered;
   height: 15vh;
   width: 15vh;
