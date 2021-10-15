@@ -10,12 +10,15 @@ const authEvents = require('./auth/events')
 
 const playerChoice = function (event) {
   console.log(event.target.id)
-  if (turn % 2 === 1) {
+  if ($(`#${event.target.id}`).is(':empty') && turn % 2 === 1) {
     $(`#${event.target.id}`).text(player1)
-  } else {
+    turn++
+  } else if ($(`#${event.target.id}`).is(':empty') && turn % 2 === 0) {
     $(`#${event.target.id}`).text(player2)
+    turn++
+  } else {
+    alert('That tile is taken fool!!!')
   }
-  turn++
 }
 
 const reset = function () {
@@ -39,5 +42,5 @@ $(() => {
   $('#signOut').on('click', authEvents.onSignOut)
   $('#container').on('click', playerChoice)
   $('#playBtn').on('click', authEvents.onPlay)
-  $('#newGame').on('click', reset)
+  $('#newGame').on('click', reset).hide()
 })

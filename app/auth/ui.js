@@ -81,6 +81,7 @@ const onSignOutSuccess = function (responseData) {
 
   $('#after-sign-in').show()
   $('#before-sign-in').hide()
+  $('#newGame').hide()
 
   console.log('responseData is', responseData)
 }
@@ -98,6 +99,7 @@ const onNewGameSuccess = function (responseData) {
   $('#container').show()
   $('#counter').show()
   $('#playBtn').hide()
+  $('#newGame').show()
 }
 
 const onNewGameFailure = function () {
