@@ -46,6 +46,14 @@ const onPlay = function (event) {
   event.preventDefault()
 
   api.newGame()
+    .then(ui.onPlaySuccess)
+    .catch(ui.onPlayFailure)
+}
+
+const onNewGame = function (event) {
+  event.preventDefault()
+
+  api.newGame()
     .then(ui.onNewGameSuccess)
     .catch(ui.onNewGameFailure)
 }
@@ -55,5 +63,6 @@ module.exports = {
   onSignIn,
   onChangePassword,
   onSignOut,
-  onPlay
+  onPlay,
+  onNewGame
 }

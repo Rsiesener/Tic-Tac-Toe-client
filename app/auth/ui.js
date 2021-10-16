@@ -32,6 +32,7 @@ const signInSuccess = function (responseData) {
   $('#playBtn').show()
   $('#signOut').show()
   $('form').trigger('reset')
+  $('#changePassword').show()
 
   console.log('responseData is', responseData)
 }
@@ -95,7 +96,17 @@ const onSignOutFailure = function (error) {
   console.error(error)
 }
 
-const onNewGameSuccess = function (responseData) {
+const onPlaySuccess = function (responseData) {
+  $('#container').show()
+  $('#counter').show()
+  $('#playBtn').hide()
+  $('#newGame').show()
+}
+
+const onPlayFailure = function () {
+
+}
+const onNewGameSuccess = function () {
   $('#container').show()
   $('#counter').show()
   $('#playBtn').hide()
@@ -115,5 +126,7 @@ module.exports = {
   onSignOutFailure,
   onSignOutSuccess,
   onNewGameSuccess,
-  onNewGameFailure
+  onNewGameFailure,
+  onPlaySuccess,
+  onPlayFailure
 }
