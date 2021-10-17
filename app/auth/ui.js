@@ -76,7 +76,7 @@ const onSignOutSuccess = function (responseData) {
   $('#signOut').hide()
   $('#changePassword').hide()
   $('#container').hide()
-  $('#counter').hide()
+  $('#winner').hide()
 
   $('form').trigger('reset')
 
@@ -98,7 +98,7 @@ const onSignOutFailure = function (error) {
 
 const onPlaySuccess = function (responseData) {
   $('#container').show()
-  $('#counter').show()
+  $('#winner').show()
   $('#playBtn').hide()
   $('#newGame').show()
 }
@@ -108,7 +108,7 @@ const onPlayFailure = function () {
 }
 const onNewGameSuccess = function () {
   $('#container').show()
-  $('#counter').show()
+  $('#winner').show()
   $('#playBtn').hide()
   $('#newGame').show()
 }
