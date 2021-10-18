@@ -98,9 +98,9 @@ const onSignOutFailure = function (error) {
 
 const onPlaySuccess = function (responseData) {
   $('#container').show()
-  $('#winner').show()
   $('#playBtn').hide()
   $('#newGame').show()
+  $('#winner').show()
 }
 
 const onPlayFailure = function () {
@@ -108,9 +108,9 @@ const onPlayFailure = function () {
 }
 const onNewGameSuccess = function () {
   $('#container').show()
-  $('#winner').show()
   $('#playBtn').hide()
   $('#newGame').show()
+  $('#winner').show()
 }
 
 const onNewGameFailure = function () {
