@@ -98,7 +98,7 @@ const endGame = function () {
 
 const playerChoice = function (event) {
   console.log(event)
-  if ($(`#${event.target.id}`).is(':empty') && turn % 2 === 1) {
+  if ($(`#${event.target.id}`).html() === '' && turn % 2 === 1) {
     $(`#${event.target.id}`).html(player1)
     if (event.target.id === 'box-1') {
       arr[0] = 'x'
@@ -164,7 +164,7 @@ const playerChoice = function (event) {
       endGame()
       return arr
     }
-  } else if ($(`#${event.target.id}`).is(':empty') && turn % 2 === 0) {
+  } else if ($(`#${event.target.id}`).html() === '' && turn % 2 === 0) {
     $(`#${event.target.id}`).html(player2)
     if (event.target.id === 'box-1') {
       arr[0] = 'o'
@@ -232,20 +232,21 @@ const playerChoice = function (event) {
     }
   } else {
     $('#winner').html('That tile is taken fool!!!')
+    console.log('some word')
   }
 }
 
 const reset = function () {
-  $('#box-1').text('')
-  $('#box-2').text('')
-  $('#box-3').text('')
-  $('#box-4').text('')
-  $('#box-5').text('')
-  $('#box-6').text('')
-  $('#box-7').text('')
-  $('#box-8').text('')
-  $('#box-9').text('')
-  $('#winner').text('Eat, Play, SLAY!!!')
+  $('#box-1').html('')
+  $('#box-2').html('')
+  $('#box-3').html('')
+  $('#box-4').html('')
+  $('#box-5').html('')
+  $('#box-6').html('')
+  $('#box-7').html('')
+  $('#box-8').html('')
+  $('#box-9').html('')
+  $('#winner').html('Eat, Play, SLAY!!!')
   $('#container').on('click', playerChoice)
   turn = 1
   win = 'false'
