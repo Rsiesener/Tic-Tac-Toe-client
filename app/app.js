@@ -13,75 +13,75 @@ const winIf = function () {
   let player = 'Player1'
   const square = (selector) => selector !== ''
   if (arr[0] === 'x' && arr[1] === 'x' && arr[2] === 'x') {
-    $('#winner').html(player + ' WINS!')
+    $('#winner').html(player + ' WINS!!!')
     win = 'true'
     return win
   } else if (arr[3] === 'x' && arr[4] === 'x' && arr[5] === 'x') {
-    $('#winner').html(player + ' WINS!')
+    $('#winner').html(player + ' WINS!!!')
     win = 'true'
     return win
   } else if (arr[6] === 'x' && arr[7] === 'x' && arr[8] === 'x') {
-    $('#winner').html(player + ' WINS!')
+    $('#winner').html(player + ' WINS!!!')
     win = 'true'
     return win
   } else if (arr[0] === 'x' && arr[3] === 'x' && arr[6] === 'x') {
-    $('#winner').html(player + ' WINS!')
+    $('#winner').html(player + ' WINS!!!')
     win = 'true'
     return win
   } else if (arr[1] === 'x' && arr[4] === 'x' && arr[7] === 'x') {
-    $('#winner').html(player + ' WINS!')
+    $('#winner').html(player + ' WINS!!!')
     win = 'true'
     return win
   } else if (arr[2] === 'x' && arr[5] === 'x' && arr[8] === 'x') {
-    $('#winner').html(player + ' WINS!')
+    $('#winner').html(player + ' WINS!!!')
     win = 'true'
     return win
   } else if (arr[0] === 'x' && arr[4] === 'x' && arr[8] === 'x') {
-    $('#winner').html(player + ' WINS!')
+    $('#winner').html(player + ' WINS!!!')
     win = 'true'
     return win
   } else if (arr[2] === 'x' && arr[4] === 'x' && arr[6] === 'x') {
-    $('#winner').html(player + ' WINS!')
+    $('#winner').html(player + ' WINS!!!')
     win = 'true'
     return win
   } else if (arr[0] === 'o' && arr[1] === 'o' && arr[2] === 'o') {
     player = 'Player2'
-    $('#winner').html(player + ' WINS!')
+    $('#winner').html(player + ' WINS!!!')
     win = 'true'
     return win
   } else if (arr[3] === 'o' && arr[4] === 'o' && arr[5] === 'o') {
     player = 'Player2'
-    $('#winner').html(player + ' WINS!')
+    $('#winner').html(player + ' WINS!!!')
     win = 'true'
     return win
   } else if (arr[6] === 'o' && arr[7] === 'o' && arr[8] === 'o') {
     player = 'Player2'
-    $('#winner').html(player + ' WINS!')
+    $('#winner').html(player + ' WINS!!!')
     win = 'true'
     return win
   } else if (arr[0] === 'o' && arr[3] === 'o' && arr[6] === 'o') {
     player = 'Player2'
-    $('#winner').html(player + ' WINS!')
+    $('#winner').html(player + ' WINS!!!')
     win = 'true'
     return win
   } else if (arr[1] === 'o' && arr[4] === 'o' && arr[7] === 'o') {
     player = 'Player2'
-    $('#winner').html(player + ' WINS!')
+    $('#winner').html(player + ' WINS!!!')
     win = 'true'
     return win
   } else if (arr[2] === 'o' && arr[5] === 'o' && arr[8] === 'o') {
     player = 'Player2'
-    $('#winner').html(player + ' WINS!')
+    $('#winner').html(player + ' WINS!!!')
     win = 'true'
     return win
   } else if (arr[0] === 'o' && arr[4] === 'o' && arr[8] === 'o') {
     player = 'Player2'
-    $('#winner').html(player + ' WINS!')
+    $('#winner').html(player + ' WINS!!!')
     win = 'true'
     return win
   } else if (arr[2] === 'o' && arr[4] === 'o' && arr[6] === 'o') {
     player = 'Player2'
-    $('#winner').html(player + ' WINS!')
+    $('#winner').html(player + ' WINS!!!')
     win = 'true'
     return win
   } else if (arr.every(square)) {
@@ -252,6 +252,11 @@ const reset = function () {
   arr = ['', '', '', '', '', '', '', '', '']
 }
 
+const callBack = function (event) {
+  authEvents.onNewGame(event)
+  reset()
+}
+
 $(() => {
   $('#signUp').on('submit', authEvents.onSignUp)
   $('#signIn').on('submit', authEvents.onSignIn)
@@ -259,6 +264,5 @@ $(() => {
   $('#signOut').on('click', authEvents.onSignOut)
   $('#container').on('click', playerChoice)
   $('#playBtn').on('click', authEvents.onPlay)
-  $('#newGame').on('click', authEvents.onNewGame)
-  $('#newGame').on('click', reset).hide()
+  $('#newGame').on('click', callBack).hide()
 })
