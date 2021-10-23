@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Tic-Tac-Toe</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+
+      <div class="top-1">
+        <h1 class="titleName">🎃Tic-Tac-Toe🎃</h1>
+        <h3 class="rules">🔪Rules🔪</h3>
+        <section id="wordsAndThings">
+          <p>👻 The rules are simple. Listen carefully and you might make it out alive.<br>
+          👻 The object of the game is to <strong>SLAY</strong> your enemy by taking  tiles in the graveyard.<br>
+          👻 Once you have taken 3 tiles that form a line you have killed your opponent.</p>
+        </section>
+      </div>
+
+      <section id="beforeSignIn">
+        <form id="signUp" class="border">
+          <fieldset class="SignUpForm">
+            <legend class="legend1">Sign Up</legend>
+            <input type="email" name="credentials[email]" placeholder="Email" required>
+            <input type="password" name="credentials[password]"
+            placeholder="Password" required>
+            <input type="password" name="credentials[password_confirmation]" placeholder="Password Confirmation" required>
+            <button class="signUpBtn" id="signUpBtn">Sign Up</button>
+          </fieldset>
+        </form>
+
+        <form id="signIn" class="border">
+          <fieldset>
+            <legend class="legend1">Sign In</legend>
+            <input type="email" name="credentials[email]" placeholder="Email" required>
+            <input type="password" name="credentials[password]" placeholder="Password" required>
+            <button class="signInBtn" id="signInBtn">Sign In</button>
+          </fieldset>
+        </form>
+      </section>
+
+      <section id="afterSignIn">
+        <form id="changePassword" class="border">
+          <fieldset>
+            <legend class="legend1">Change Password</legend>
+            <input type="password" name="passwords[old]" placeholder="Old Password" required>
+            <input type="password" name="passwords[new]" placeholder="New Password" required>
+            <button class="changePasswordBtn" id="changePasswordBtn">Change Password</button>
+          </fieldset>
+        </form>
+      </section>
+
+      <section class="buttons">
+        <button id="playBtn" class="playBtn">Play</button>
+        <button id="signOut" class="signOut">Sign Out</button>
+        <button id="newGame" class="newGame">New Game</button>
+      </section>
+
+      <section>
+        <div id="error-message"></div>
+        <div id="movies-display"></div>
+      </section>
+
+      <div class="textBox">
+        <div class="winner" id="winner">
+          Eat, Play, SLAY!!!
+        </div>
+      </div>
+
+      <div class="container" id="container">
+
+        <div class="row-1">
+          <div id="box-1" class="boxes"></div>
+          <div id="box-2" class="boxes"></div>
+          <div id="box-3" class="boxes"></div>
+        </div>
+
+        <div class="row-2">
+          <div id="box-4" class="boxes"></div>
+          <div id="box-5" class="boxes"></div>
+          <div id="box-6" class="boxes"></div>
+        </div>
+
+        <div class="row-3">
+          <div id="box-7" class="boxes"></div>
+          <div id="box-8" class="boxes"></div>
+          <div id="box-9" class="boxes"></div>
+        </div>
+
+      </div>
+
+    </body>
+</html>

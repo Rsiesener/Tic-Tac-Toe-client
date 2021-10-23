@@ -1,0 +1,238 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://i.imgur.com/7mRWO7p.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.top-1 {
+  display: flex;
+  border: 5px solid black;
+  border-radius: 25px;
+  margin: 0 20% 0 20%;
+  height: 200px;
+  background-color: black;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.titleName {
+  display: flex;
+  align-self: center;
+  margin: 0%;
+  color: red;
+  font-size: 25px;
+
+}
+
+.rules {
+  display: flex;
+  align-self: center;
+  margin: 0;
+  color: red;
+
+}
+
+.legend1 {
+  color: red;
+}
+
+
+#wordsAndThings {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: red;
+
+}
+
+.text-danger {
+  color: red;
+}
+.text-success {
+  color: limegreen;
+}
+
+.playBtn {
+background-color: orangered;
+border-radius: 15px;
+text-shadow: .8px .6px orange;
+}
+.newGame {
+background-color: orangered;
+border-radius: 15px;
+text-shadow: .8px .6px orange;
+}
+.signOut {
+  background-color: orangered;
+  border-radius: 15px;
+  text-shadow: .8px .6px orange;
+}
+.changePasswordBtn {
+  background-color: orangered;
+  border-radius: 15px;
+  text-shadow: .8px .6px orange;
+}
+.signInBtn {
+  background-color: orangered;
+  border-radius: 15px;
+  text-shadow: .8px .6px orange;
+}
+.signUpBtn {
+  background-color: orangered;
+  border-radius: 15px;
+  text-shadow: .8px .6px orange;
+}
+.buttons {
+display: flex;
+flex-direction: column;
+max-width: 12vw;
+}
+
+.textBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20% 0 20%;
+}
+
+.winner {
+  display: flex;
+  border: 2px solid black;
+  background-color: orangered;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  height: 45vh;
+  width: 25vw;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  text-shadow: 2px 2px orange;
+}
+#container {
+  display: none;
+}
+
+.row-1 {
+  display: flex;
+
+}
+
+.row-2 {
+  display: flex;
+
+}
+
+.row-3 {
+  display: flex;
+
+}
+
+#box-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15vh;
+  border: 2px solid orangered;
+  height: 15vh;
+  width: 15vh;
+}
+#box-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15vh;
+  border: 2px solid orangered;
+  height: 15vh;
+  width: 15vh;
+}
+#box-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15vh;
+  border: 2px solid orangered;
+  height: 15vh;
+  width: 15vh;
+}
+#box-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15vh;
+  border: 2px solid orangered;
+  height: 15vh;
+  width: 15vh;
+}
+#box-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15vh;
+  border: 2px solid orangered;
+  height: 15vh;
+  width: 15vh;
+}
+#box-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15vh;
+  border: 2px solid orangered;
+  height: 15vh;
+  width: 15vh;
+}
+#box-7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15vh;
+  border: 2px solid orangered;
+  height: 15vh;
+  width: 15vh;
+}
+#box-8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15vh;
+  border: 2px solid orangered;
+  height: 15vh;
+  width: 15vh;
+}
+#box-9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15vh;
+  border: 2px solid orangered;
+  height: 15vh;
+  width: 15vh;
+}
+
+#afterSignIn {
+  display: none;
+}
+#playBtn {
+  display: none;
+}
+.signOut {
+  display: none;
+}
+#winner {
+  display: none;
+}
