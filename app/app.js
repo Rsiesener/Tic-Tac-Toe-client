@@ -231,7 +231,7 @@ const playerChoice = function (event) {
       return arr
     }
   } else {
-    $('#winner').html('That tile is taken fool!!!')
+    $('#winner').html('That tile is taken!!!')
     console.log('some word')
   }
 }
