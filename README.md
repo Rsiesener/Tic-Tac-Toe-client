@@ -1,5 +1,8 @@
 # Tic-Tac-Toe-Game
 
+### Deployed link
+(https://rsiesener.github.io/Tic-Tac-Toe-client/)
+
 ### Create Account 
 To create an account, start the game, select sign up, input an email which will be your username,
 and create a password. Then push play.
